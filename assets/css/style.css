@@ -1,0 +1,23 @@
+.red-dot {
+    height: 40px;
+    width: 40px;
+    background-color: #F98070;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green-dot {
+    height: 40px;
+    width: 40px;
+    background-color: #90EE8F;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.blue-dot {
+    height: 40px;
+    width: 40px;
+    background-color: #87CEFA;
+    border-radius: 50%;
+    display: inline-block;
+}
