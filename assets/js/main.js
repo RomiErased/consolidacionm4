@@ -12,7 +12,7 @@ const consultarAPI = (url) => {
 function* generador1(){
     yield consultarAPI(`${url}/1?format=json`).then(resp => $("#lista1").append(`
     <div class="col-4">
-                <div class="card" id="card2">
+                <div class="card" id="card1">
                     <div class="card-body d-flex justify-content-evenly m-4">
                         <span class="red-dot"></span>
                         <div class="row col-9 ">
@@ -23,8 +23,9 @@ function* generador1(){
             </div>
         </div>`));
     yield consultarAPI(`${url}/2?format=json`).then(resp => $("#lista1").append(`
-    <div class="col-4 mx-2">
-                <div class="card" id="card2">
+    <div class="col-4 mt-3 d-flex justify-content-evenly">
+            <div class="vr" style="height: 150px;"></div>
+                <div class="card mx-3" id="card1">
                     <div class="card-body d-flex justify-content-evenly m-4">
                         <span class="red-dot"></span>
                         <div class="row col-9 ">
@@ -36,8 +37,8 @@ function* generador1(){
         </div>`));
     yield consultarAPI(`${url}/3?format=json`).then(resp => $("#lista1").append(`
     <div class="col-4 mx-2">
-                <div class="card" id="card2">
-                    <div class="card-body d-flex justify-content-evenl m-4">
+                <div class="card" id="card1">
+                    <div class="card-body d-flex justify-content-evenly m-4">
                         <span class="red-dot"></span>
                         <div class="row col-9 ">
                         <h5>${resp.name}</h5>
@@ -47,8 +48,9 @@ function* generador1(){
             </div>
         </div>`));
     yield consultarAPI(`${url}/4?format=json`).then(resp => $("#lista1").append(`
-    <div class="col-4 mx-2">
-                <div class="card" id="card2">
+    <div class="col-4 mt-3 d-flex justify-content-evenly">
+            <div class="vr" style="height: 150px;"></div>
+                <div class="card mx-3" id="card1">
                     <div class="card-body d-flex justify-content-evenly m-4">
                         <span class="red-dot"></span>
                         <div class="row col-9 ">
@@ -60,7 +62,7 @@ function* generador1(){
         </div>`));
     yield consultarAPI(`${url}/5?format=json`).then(resp => $("#lista1").append(`
     <div class="col-4 mt-3">
-                <div class="card" id="card2">
+                <div class="card" id="card1">
                     <div class="card-body d-flex justify-content-evenly">
                         <span class="red-dot"></span>
                         <div class="row col-9 ">
@@ -86,9 +88,10 @@ function* generador2(){
             </div>
         </div>`));
     yield consultarAPI(`${url}/7?format=json`).then(resp => $("#lista2").append(`
-    <div class="col-4 mt-3">
-                <div class="card" id="card2">
-                    <div class="card-body d-flex justify-content-evenly">
+    <div class="col-4 mt-3 d-flex justify-content-evenly">
+            <div class="vr" style="height: 150px;"></div>
+                <div class="card mx-3" id="card2">
+                    <div class="card-body">
                         <span class="green-dot"></span>
                         <div class="row col-9 ">
                         <h5>${resp.name}</h5>
@@ -138,7 +141,8 @@ function* generador2(){
 function* generador3(){
     yield consultarAPI(`${url}/11?format=json`).then(resp => $("#lista3").append(
         `<div class="col-4 mt-3">
-                <div class="card" id="card2">
+            
+                <div class="card" id="card3">
                     <div class="card-body d-flex justify-content-evenly">
                         <span class="blue-dot"></span>
                         <div class="row col-9 ">
@@ -149,9 +153,10 @@ function* generador3(){
             </div>
         </div>`));
     yield consultarAPI(`${url}/12?format=json`).then(resp => $("#lista3").append(`
-    <div class="col-4 mt-3">
-                <div class="card" id="card2">
-                    <div class="card-body d-flex justify-content-evenly">
+        <div class="col-4 mt-3 d-flex justify-content-evenly">
+            <div class="vr" style="height: 150px;"></div>
+                <div class="card mx-3" id="card3">
+                    <div class="card-body">
                         <span class="blue-dot"></span>
                         <div class="row col-9 ">
                         <h5>${resp.name}</h5>
@@ -162,7 +167,7 @@ function* generador3(){
         </div>`));
     yield consultarAPI(`${url}/13?format=json`).then(resp => $("#lista3").append(`
     <div class="col-4 mt-3">
-                <div class="card" id="card2">
+                <div class="card" id="card3">
                     <div class="card-body d-flex justify-content-evenly">
                         <span class="blue-dot"></span>
                         <div class="row col-9 ">
